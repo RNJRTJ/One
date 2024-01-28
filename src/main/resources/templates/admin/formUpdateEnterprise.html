@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head th:replace="~{fragments/head :: head('CF | Administrativo')}"></head>
+
+<body>
+
+	<!-- - header - -->
+    <header th:replace="~{fragments/header :: navbar}" ></header> 
+    <div th:replace="~{fragments/header :: space}"></div> 
+	<!-- End #header -->
+	
+	<!--Side Bar-->
+    <nav th:replace="~{fragments/asideAdmin :: asideAdmin}"> </nav>	
+	
+	
+
+	
+	<!--Conteudo página-->
+	<div class="page-wrapper chiller-theme">
+		<div class="container d-flex justify-content-center mb-5 mt-5">
+			<h1>Atualize a loja aqui</h1>
+		</div>
+	</div>
+	
+	
+	
+	<!--****************MUDAR AS ROTAS***************-->
+		<div class="container mt-3">
+		<h2>Atualizar loja</h2>
+		<form th:action="@{/enterprise/editar/{id}(id=${enterprise.idEnterprise})}" th:object="${enterprise}" method="post">
+			
+			<div class="form-group">
+				<label for="id">ID:</label>
+				<input type="text" id="idEnterprise" class="form-control" th:field="*{idEnterprise}" th:readonly="readonly" />
+			</div>
+			
+			<div class="form-group">
+				<label for="nome">Nome da loja:</label>
+				<input type="text" id="fantasyName" class="form-control" th:field="*{fantasyName}" />
+			</div>
+			
+			<div class="form-group">
+				<label for="nome">CNPJ:</label>
+				<input type="text" id="cnpj" class="form-control" th:field="*{cnpj}" />
+			</div>
+			
+			<div class="form-group">
+				<label for="nome">Número da loja:</label>
+				<input type="number" id="numStore" class="form-control" th:field="*{numStore}" />
+			</div>
+			
+			<div class="form-group">
+				<label for="nome">Descrição da loja:</label>
+				<input type="text" id="description" class="form-control" th:field="*{description}" />
+			</div>
+			
+			
+			<!--aqui é a lógica da imagem também-->
+			<div class="form-group">
+				<label for="imgUrl">Imagem:</label>
+				<input type="image" id="image" class="form-control" th:field="*{image}" />
+			</div>									
+
+			<button type="submit" class="btn btn-primary">Salvar</button>
+		</form>
+	</div>
+
+    <!-- JS scripts -->
+    	<script th:replace="~{fragments/scripts :: jquery}">		
+		</script>
+
+		<script th:replace="~{fragments/scripts :: popper}">
+	    </script>
+	    
+    	<script th:replace="~{fragments/scripts :: bootstrap}">
+    	</script>
+		
+		<script th:replace="~{fragments/scripts :: sideBar}">			
+		</script>
+    
+    
+</body>
+
+</html>

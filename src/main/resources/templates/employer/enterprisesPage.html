@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head('CF | Empreendedor')}"></head>
+
+<body>
+
+	<!-- - header - -->
+	<header th:replace="~{fragments/header :: navbar}"></header>
+	<div th:replace="~{fragments/header :: space}"></div>
+	<!-- End #header -->
+
+	<!--Side Bar-->
+<!--	<nav th:replace="~{fragments/asideEmployer :: asideEmployer}"> </nav>-->
+
+	<main class="container mb-5">
+
+		<!-- #restricted-section -->
+		<section id="restricted-section" class="my-4">
+			<div class="px-3">
+				<div class="section-title py-1">
+					<h2 class="fs-3 fw-bold">Minhas empresas</h2>
+					<p class="fs-5 pb-2 fw-light">Gerencie seus empreendimentos de forma simples e prática</p>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-9">
+						<p class="fs-6 mb-5">
+							Na área do empreendedor, você tem mobilidade para manipular seus produtos de forma prática e
+							dinâmica. Acesse cada empreendimento individualmente e mantenha sua estante virtual de
+							produtos
+							sempre atualizada. Saiba mais sobre nosso trabalho acessando a seção <span
+								class="fw-semibold">"Sobre nós"</span> da nossa
+							plataforma ou entre em contato com a administração da sua instituição.
+						</p>
+					</div>
+
+					<div class="col-lg-3 mb-5">
+						<a href="/employer/EnableEnterprise"
+							class="btn btn-primary d-flex align-items-center justify-content-center px-1"><i
+								class="bi bi-plus-circle-dotted fs-4 pe-2"></i>Habilitar empreendimento</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-between row-gap-4">
+
+				<div class="col-xl-3 col-lg-4 col-md-6" th:each="enterprise : ${enterprises}">
+					<div class="d-flex justify-content-center">
+						<div class="card card-enterprise">
+							<div class="img-container"> <!-- src="../imgs/barraca.png" ${enterprise.idEnterprise} -->
+								<img src="../imgs/barraca.png" th:src="|/enterprise/imagem/${enterprise.idEnterprise}|"
+									class="card-img-top" alt="Imagem do empreendimento">
+							</div>
+
+							<div class="card-body">
+								<span>Cod. </span><span th:text="${enterprise.idEnterprise}">1</span>
+								<h3 class="fs-5 fw-semibold" th:text="${enterprise.fantasyName}">Max. 16 caracteres</h3>
+								<p class="py-1" th:text="${enterprise.description}">Max. 52 caracteres</p>
+
+								<div class="d-flex flex-wrap justify-content-between">
+									<a href="ROTA DE ABRIR" class="btn btn-primary py-1 px-3 mb-1 fs-5">
+										<i class="bi bi-bag"></i>
+									</a>
+									<a href="ROTA DE ABRIR" class="btn btn-primary py-1 px-3 mb-1 fs-5">
+										<i class="bi bi-pencil-square"></i>
+									</a>
+									<a href="ROTA DE EXCLUIR" class="btn btn-primary py-1 px-3 mb-1 fs-5">
+										<i class="bi bi-trash"></i>
+									</a>
+								</div>
+							</div>
+						</div> <!-- End .card -->
+					</div>
+				</div>
+
+			</div>
+		</section> <!-- End #restricted-section -->
+
+	</main>
+
+	<!-- - footer - -->
+	<footer th:replace="~{fragments/footer :: footer}"></footer>
+	<!-- - End #footer - -->
+
+	<!-- JS scripts -->
+	<script th:replace="~{fragments/scripts :: jquery}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: popper}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: bootstrap}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: sideBar}">
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<div class="col-xl-4 col-lg-6" th:fragment="card-part-cli(img, category, title)">
+	<div class="card-post">
+		<div class="post-img">
+			<img th:src="${img}" alt="" class="img-fluid">
+		</div>
+
+		<p class="post-category" th:text="${category}"></p>
+
+		<h2 class="title">
+			<a th:text="${title}">Dolorum optio tempore voluptas dignissimos</a>
+		</h2>
+	</div>
+</div>
+
+<!--<div class="col-lg-4 col-sm-6 my-1" th:each="market, iterStat : ${markets}" th:if="${iterStat.index < 3}">-->
+<!--	<div class="card card-market text-center mx-1">-->
+<!--		<div class="card-body">-->
+<!--			<h5 class="card-title pb-2" th:text="${market.nameMarket}">Nome do aglomerado</h5>-->
+<!--			<p class="card-text" th:text="${market.description}">Some quick example text to build on-->
+<!--				the card title and make up the bulk of the card's content.</p>-->
+<!--			<a href="#" class="btn btn-primary">Ver mais</a>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->

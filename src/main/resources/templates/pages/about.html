@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head('CF | Sobre nós')}"></head>
+
+<body>
+
+	<!-- - header - -->
+	<header th:replace="~{fragments/header :: navbar}"></header>
+	<div th:replace="~{fragments/header :: space}"></div>
+	<!-- End #header -->
+
+	<div class="container col-lg-12 section-title py-4 mt-3">
+		<h2 class="fs-3 fw-bold mt-5">Descubra mais sobre nós</h2>
+		<p class="fs-5 pb-2 fw-light">Saiba mais sobre o nosso <span class="fw-bold">time</span> e nossos
+			<span class="fw-bold">projetos</span>!
+		</p>
+	</div>
+<!--<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">-->
+<!--  Link with href-->
+<!--</a>-->
+<!--<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">-->
+<!--  Button with data-bs-target-->
+<!--</button>-->
+
+<!--<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">-->
+<!--  <div class="offcanvas-header">-->
+<!--    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>-->
+<!--    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>-->
+<!--  </div>-->
+<!--  <div class="offcanvas-body">-->
+<!--    <div>-->
+<!--      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.-->
+<!--    </div>-->
+<!--    <div class="dropdown mt-3">-->
+<!--      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">-->
+<!--        Dropdown button-->
+<!--      </button>-->
+<!--      <ul class="dropdown-menu">-->
+<!--        <li><a class="dropdown-item" href="#">Action</a></li>-->
+<!--        <li><a class="dropdown-item" href="#">Another action</a></li>-->
+<!--        <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+	<div class="container-fluid intersection"></div>
+
+	<!-- - main - -->
+	<main class="main">
+		<!-- #sobre section -->
+		<section id="sobre" class="container sobre">
+			<div class="container bg-cards-about" data-aos="fade-up" data-aos-delay="100">
+
+				<div class="row align-items-xl-center gy-5">
+					<div class="section-title col-xl-5 py-4 pe-4 conteudo">
+						<div class="py-2">
+							<p class="fs-6 my-1">Nossa missão:</p>
+							<h3 class="fs-3 fw-bold"><span class="marker"></span>Somos o Comércio Fácil</h3>
+						</div>
+
+						<p class="fs-6">
+							Uma equipe formada por cinco integrantes dedicados a auxiliar micro e pequenos
+							empreendedores de
+							baixa renda em suas jornadas.
+							Aliando representatividade digital e praticidade, conseguimos impulsionar a divulgação de
+							produtos e
+							formentar o comércio local.
+						</p>
+
+						<div class="pt-2">
+							<a href="#sobre-details" class="leia-mais py-2"><span>Saiba mais</span> </a>
+						</div>
+					</div>
+
+					<div class="col-xl-7">
+						<div class="row gy-4 icon-boxes mb-3">
+							<div class="col-md-6 boxIcon" data-aos="fade-up" data-aos-delay="200">
+								<div class="icon-box">
+									<i class="fa-solid fa-barcode"></i>
+									<h3 class="fs-4 fw-semibold">Propaganda</h3>
+									<p class="fw-light">Coloque seus produtos em nosso sitema e mostraremos ao seu
+										cliente.</p>
+								</div>
+							</div>
+							<!-- Fim .icon-box -->
+
+							<div class="col-md-6 boxIcon" data-aos="fade-up" data-aos-delay="300">
+								<div class="icon-box">
+									<i class="fa-solid fa-trophy"></i>
+									<h3 class="fs-4 fw-semibold">Competitividade</h3>
+									<p class="fw-light">Estimulamos o mercado local e a rotatividade dos preços.</p>
+								</div>
+							</div>
+							<!-- Fim .icon-box -->
+
+							<div class="col-md-6 boxIcon" data-aos="fade-up" data-aos-delay="400">
+								<div class="icon-box">
+									<i class="fa-solid fa-magnifying-glass"></i>
+									<h3 class="fs-4 fw-semibold">Mapeamento</h3>
+									<p class="fw-light">Mapeamos as rotas dos estabelecimento para conectar
+										empreendedores e clientes de
+										maneira prática.</p>
+								</div>
+							</div>
+							<!-- Fim .icon-box -->
+
+							<div class="col-md-6 boxIcon" data-aos="fade-up" data-aos-delay="500">
+								<div class="icon-box">
+									<i class="fa-solid fa-magnet"></i>
+									<h3 class="fs-4 fw-semibold">Aumento de Vendas</h3>
+									<p class="fw-light">Obtenha um aumento significativo nas suas vendas através da
+										nossa plataforma.</p>
+								</div>
+							</div>
+							<!-- Fim .icon-box -->
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- End #sobre section -->
+
+		<!-- #team section -->
+		<section id="team" class="container-fluid team mb-5">
+			<div class="container py-3">
+				<div class="mb-3 pt-5 pb-1 text-center section-title">
+					<p class="fs-6 my-1">Nosso time:</p>
+					<h3 class="fs-3 fw-bold">A equipe por trás do projeto</h3>
+					<p class="fs-6">Focados num ambiente colaborativo onde todos contribuem com suas habilidades</p>
+					<div class="d-flex justify-content-center py-2">
+						<div class="marker-bottom"></div>
+					</div>
+				</div>
+
+				<div class="row gy-5 mb-1 pt-4 pb-5 justify-content-center">
+					<div
+						th:replace="~{fragments/card-team :: card-team('https://media.licdn.com/dms/image/D4D03AQG4rKMeNk0kvw/profile-displayphoto-shrink_800_800/0/1701791991275?e=1711584000&v=beta&t=qWP8Ix39YKEPvBN8Zre9BUtSqc-uIQ5bydCQysN_5VI','https://github.com/PedroGoya24', 'https://www.linkedin.com/in/pedro-da-cunha-goya-69b9941a0/', 'Pedro Goya', 'Líder', 'Responsável pelo desenvolvimento da platarforma.')}">
+					</div>
+
+					<div
+						th:replace="~{fragments/card-team :: card-team('https://media.licdn.com/dms/image/D4D03AQHYmbQihn2lQg/profile-displayphoto-shrink_800_800/0/1701629196539?e=1711584000&v=beta&t=i8JnkHAGvT7oZlci7o1DRtrT2xI-xv5n41JmRM1qP5E', 'https://github.com/rodrigo-alberto', 'https://www.linkedin.com/in/rodrigo-alberto-/','Rodrigo Alberto', 'Vice-líder', 'Responsável pelo desenvolvimento da platarforma.')}">
+					</div>
+					
+					<div
+						th:replace="~{fragments/card-team :: card-team('https://media.licdn.com/dms/image/D4D03AQHL47yTIX9eHA/profile-displayphoto-shrink_800_800/0/1694281131546?e=1711584000&v=beta&t=jTXslC3OG6h2HUfE38q78UajyUDOJ_nbn5yxjVVIHIE', 'https://github.com/RNJRTJ', 'https://www.linkedin.com/in/robson-junior-729600190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', 'Robson Junior', 'Deployer', 'Responsável por arquitetar o processo de deploy da aplicação.')}">
+					</div>
+
+					<div
+						th:replace="~{fragments/card-team :: card-team('https://media.licdn.com/dms/image/D4D03AQHNn-OB0y2zYQ/profile-displayphoto-shrink_800_800/0/1706011786262?e=1711584000&v=beta&t=cZKVXntyof-o0EiekCDSdTkfTvpr18ZdU1tPoYt3S1E', 'https://github.com/rayzavirginia', 'https://www.linkedin.com/in/rayza-virginia-09514728a/', 'Rayza Virginea', 'Designer', 'Responsável por formatar e organizar as redes e documentos da equipe.')}">
+					</div>
+
+					<div
+						th:replace="~{fragments/card-team :: card-team('https://media.licdn.com/dms/image/C4E03AQGXu-tYEw7yqg/profile-displayphoto-shrink_800_800/0/1626730049512?e=1711584000&v=beta&t=YsGIMUyOy_2Pdvm6GdOe4H_dGDs9V2vOCVhGBJt0AEQ', 'https://github.com/montesuma10', 'https://www.linkedin.com/in/ricardo-montesuma-b67b9a121/', 'Ricardo Montesuma', 'Designer', 'Responsável por formatar e organizar as redes e documentos da equipe.')}">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End #team section -->
+
+		<!-- #sobre-details section -->
+		<section id="sobre-details">
+			<div class="container my-5" data-aos="fade-up">
+				<div class="row">
+					<div class="col-lg-12 mb-5 text-center section-title">
+						<p class="fs-6 my-1">Nossos planos:</p>
+						<h3 class="fs-3 fw-bold fsmt-5">Mais sobre nós</h3>
+						<div class="d-flex justify-content-center py-2">
+							<div class="marker-bottom"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mb-5">
+					<div class="d-lg-flex card-entrada-2 half py-1">
+						<div class="mx-4 mt-4 capa">
+							<img src="../imgs/loja.jpg" alt="" class="img-fluid rounded">
+						</div>
+
+						<div class="px-4 mt-4">
+							<div class="card-meta">Qual o nosso alvo?</div>
+							<h4 class="mb-4 display-5">Nosso Objetivo</h4>
+							<p class="fw-normal fs-6">
+								A solução busca atingir, em primeira instância, micro e pequenos empreendedores de
+								baixa renda, proprietários de negócios físicos dispostos em pequenos centros
+								comerciais (feiras livres, barracões de comércio e aglomerados de lojas), interessados
+								em impulsionar a divulgação de seus produtos. Visa também alcançar potenciais
+								clientes consumidores com dificuldades para distinguir, dentro do comércio local,
+								produtos que atendam especificamente às suas demandas e a maneira mais eficaz
+								de adquiri-los.
+							</p>
+						</div>
+					</div>
+
+					<div class="d-lg-flex card-entrada-2 half mt-5 py-1">
+						<div class="ps-4 pe-4 mt-4 capa order-2">
+							<img src="../imgs/estudante.jpg" alt="" class="img-fluid rounded">
+						</div>
+
+						<div class="px-4 mt-4">
+							<div class="card-meta">Onde queremos chegar?</div>
+							<h4 class="mb-4 display-5">Resultados Esperados</h4>
+							<p class="fw-normal fs-6">
+								Esperamos que o Comércio Fácil consiga ajudar empresários de baixa renda a compartilhar
+								seus produtos e
+								respectivos preços em um ambiente online, prático e intuitivo, facilitando assim sua
+								integração com clientes dentro e fora da comunidade local. Para o consumidor, queremos
+								proporcionar
+								uma melhora no processo de pesquisa, comparação de produtos e mapeamento de lojas
+								físicas
+								aprimorando a experiência do cliente
+								que, muitas vezes, desiste de realizar compras por simplesmente não encontrar
+								informações sobre o
+								produto desejado, mesmo que ele exista nas proximidades.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End #sobre-details -->
+
+	</main> <!-- End .container -->
+
+	<!-- - footer - -->
+	<footer th:replace="~{fragments/footer :: footer}"></footer>
+	<!-- - End #footer - -->
+
+	<!-- JS scripts -->
+	<script th:replace="~{fragments/scripts :: popper}">
+	</script>
+	<script th:replace="~{fragments/scripts :: bootstrap}">
+	</script>
+	<script th:replace="~{fragments/scripts :: fontawesome}">
+	</script>
+
+</body>
+
+</html>

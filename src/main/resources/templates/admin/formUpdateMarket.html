@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head th:replace="~{fragments/head :: head('CF | Administrativo')}"></head>
+
+<body>
+
+	<!-- - header - -->
+    <header th:replace="~{fragments/header :: navbar}" ></header> 
+    <div th:replace="~{fragments/header :: space}"></div> 
+	<!-- End #header -->
+	
+	<!--Side Bar-->
+    <nav th:replace="~{fragments/asideAdmin :: asideAdmin}"> </nav>	
+	
+	
+
+	
+	<!--Conteudo página-->
+	<div class="page-wrapper chiller-theme">
+		<div class="container d-flex justify-content-center mb-5 mt-5">
+			<h1>Atualize a feira aqui</h1>
+		</div>
+	</div>
+	
+	
+	
+	<!--****************MUDAR AS ROTAS***************-->
+		<div class="container mt-3">
+		<h2>Atualizar Feira</h2>
+		<form th:action="@{/marketplace/editar/{id}(id=${marketplace.idMarket})}" th:object="${marketplace}" method="post">
+			
+			<div class="form-group">
+				<label for="id">ID:</label>
+				<input type="text" id="id" class="form-control" th:field="*{idMarket}" th:readonly="readonly" />
+			</div>
+			
+			<div class="form-group">
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" class="form-control" th:field="*{nameMarket}" />
+			</div>
+			
+			<div class="form-group">
+				<label for="imgUrl">Url do Mapa:</label>
+				<input type="text" id="imgUrl" class="form-control" th:field="*{mapUrl}" />
+			</div>
+			
+			<div class="form-group">
+				<label for="nome">Endereço:</label>
+				<input type="text" id="nome" class="form-control" th:field="*{address}" />
+			</div>
+															
+			<button type="submit" class="btn btn-primary">Salvar</button>
+		</form>
+	</div>
+
+    <!-- JS scripts -->
+    	<script th:replace="~{fragments/scripts :: jquery}">		
+		</script>
+
+		<script th:replace="~{fragments/scripts :: popper}">
+	    </script>
+	    
+    	<script th:replace="~{fragments/scripts :: bootstrap}">
+    	</script>
+		
+		<script th:replace="~{fragments/scripts :: sideBar}">			
+		</script>
+    
+    
+</body>
+
+</html>

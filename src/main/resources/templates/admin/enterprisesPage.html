@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head th:replace="~{fragments/head :: head('CF | Administrativo')}"></head>
+
+<body>
+
+	<!-- - header - -->
+    <header th:replace="~{fragments/header :: navbar}" ></header> 
+    <div th:replace="~{fragments/header :: space}"></div> 
+	<!-- End #header -->
+	
+	<!--Side Bar-->
+    <nav th:replace="~{fragments/asideAdmin :: asideAdmin}"> </nav>	
+	
+	
+
+	
+	<!--Conteudo página-->
+	<div class="page-wrapper chiller-theme">
+		<div class="container d-flex justify-content-center mb-5 mt-5">
+			<h1>Lista de enterprises:</h1>
+		</div>
+	</div>
+	
+	
+	
+	<!--****************MUDAR AS ROTAS***************-->
+	<div class="container mt-3">
+		<h2>Lista de lojas</h2>
+		
+		<!--Olha, eu acho que não é pra ter esse botão aqui, pq o certo é cadastrar a loja com o id do employer né-->
+		<!--mas não tirei não-->
+		<a class="btn btn-primary mb-2" th:href="@{/}">Adicionar loja</a>
+		
+		<table class="table">
+			<thead class="cabecalho-tabela">
+				<tr>
+					<th>ID</th>
+					<th>Nome</th>					
+					<th>CNPJ</th>
+					<th>Número da loja</th>
+					<th>Descrição</th>
+					<th>Imagem</th>
+					<th>Lojista</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="enterprise : ${enterprise}">
+					<td th:text="${enterprise.idEnterprise}"></td>
+					<td th:text="${enterprise.fantasyName}"></td>
+					<td th:text="${enterprise.cnpj}"></td>		
+					<td th:text="${enterprise.numStore}"></td>	
+					<td th:text="${enterprise.description}"></td>																	
+					<td><img th:src="${enterprise.image}" alt="Imagem do Produto" style="max-width: 100px; max-height: 100px;" /></td>
+					
+					<!--aqui eu não sei se esta certo tlgd, tem que ver na rota. A inteção era mostrar o logista da loja, mas se for mt trampo, nem precisa.-->
+					<td th:text="${enterprise.employer}"></td>
+					
+					<td>
+						<a class="btn btn-info btn-sm"
+							th:href="@{/enterprise/editar/{id}(id=${enterprise.idEnterprise})}">Editar</a>
+						<a class="btn btn-success btn-sm"
+							th:href="@{/enterprise/deletar/{id}(id=${enterprise.idEnterprise})}">Ver Produtos</a>
+						<a class="btn btn-danger btn-sm"
+							th:href="@{/enterprise/deletar/{id}(id=${enterprise.idEnterprise})}">Excluir</a>							
+					</td>										
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+    <!-- JS scripts -->
+    	<script th:replace="~{fragments/scripts :: jquery}">		
+		</script>
+
+		<script th:replace="~{fragments/scripts :: popper}">
+	    </script>
+	    
+    	<script th:replace="~{fragments/scripts :: bootstrap}">
+    	</script>
+		
+		<script th:replace="~{fragments/scripts :: sideBar}">			
+		</script>
+    
+    
+</body>
+
+</html>

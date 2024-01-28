@@ -1,0 +1,59 @@
+<nav th:fragment="asideEmployer" id="sidebar" class="sidebar-wrapper">
+	<div class="custom-menu">
+		<button type="button" id="sidebarCollapse" class="btn">
+			<span class="bi bi-list text-light"></span>
+		</button>
+	</div>
+	<div class="sidebar-content">
+		<div class="sidebar-brand">
+			<a href="#">Comério Fácil</a>
+		</div>
+
+		<div class="sidebar-header">
+			<div class="user-pic">
+				<img src="https://media.licdn.com/dms/image/D4D03AQHYmbQihn2lQg/profile-displayphoto-shrink_800_800/0/1701629196539?e=1710979200&v=beta&t=REHgrBiUQCqDPJDuszuPXgDX9pEtT9jaCFb9xDyTkqg"
+					class="img-fluid img-rounded" style="width:50px;" />
+			</div>
+			<div class="user-info">
+				<span class="user-name">Rodrigo Alberto</span>
+				<span class="user-role active">Empreendedor</span>
+			</div>
+		</div>
+
+		<div class="sidebar-menu">
+			<ul class="list-unstyled components">
+				<li class="header-menu">
+					<span>General</span>
+				</li>
+
+				<li class="active">
+					<a href="#" th:href="@{/}">
+						<span class="fa-lg bi bi-house mr-3"></span>
+						<span class="">Voltar a home</span>
+					</a>
+				</li>
+
+				<li class="">
+					<a href="#" th:href="@{employerAdmin}">
+						<span class=" bi bi-speedometer2 mr-3"></span>
+						<span class="">Minhas empresas</span>
+					</a>
+				</li>
+
+				<li class="">
+					<a th:href="@{notfications}">
+						<span class="fa-lg bi bi-bell mr-3"></span>
+						<span>Notificações</span>
+					</a>
+				</li>
+
+				<li class="">
+					<a href="/">
+						<span class="fa-lg bi bi-box-arrow-right mr-3"></span>
+						<span class="">Sair da conta</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

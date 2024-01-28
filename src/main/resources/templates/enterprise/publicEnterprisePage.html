@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head('CF | Empreendimentos')}"></head>
+
+<body>
+
+	<!-- - header - -->
+	<header th:replace="~{fragments/header :: navbar}"></header>
+	<!-- End #header -->
+
+	<main>
+
+		<section class="container pt-5">
+			<div class="row mb-5 py-2">
+
+				<div class="col-lg-8 my-2">
+					<div class="section-title py-4">
+						<h2 class="fs-3 fw-bold"
+							th:text="${enterprise != null ? enterprise.fantasyName : 'Nome do empreendimento'}">Nome do
+							empreendimento</h2>
+
+						<p class="fs-5 pb-2 fw-light">
+							Número do empreendimento:
+							<span class="fw-bold ps-2"
+								th:text="${enterprise != null ? enterprise.numStore : 'Número da barraca'}"> X</span>
+						</p>
+					</div>
+
+					<div class="section-title py-1">
+						<p th:text="${enterprise != null ? enterprise.description : 'Descrição do empreendimento'}">
+							Descrição do empreendimento.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 my-2">
+					<div class="img-container-enterprise d-flex justify-content-end">
+						<!-- <img src="" class="rounded img-fluid" alt="Imagem do empreendimento"> -->
+						<img th:src="|/enterprise/imagem/${enterprise.idEnterprise}|" class="rounded img-fluid"
+							alt="Imagem do empreendimento">
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="container contact-employer">
+			<div class="row mt-5">
+
+				<div class="col-lg-6 my-2">
+					<div class="notice-contact text-center rounded p-3 d-flex align-items-center">
+						<div class="section-title">
+							<i class="bi bi-chat-dots icon"></i>
+							<h3 class="fs-4 fw-semibold">Tem alguma dúvida?</h3>
+							<p class="fs-6">Envie uma mensagem ao vendedor</p>
+							<p class="fs-6 mt-4 px-4">Comunique-se diretamente com o empreendimento e receba
+								atualizações
+								dos seus produtos.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 my-2">
+					<form class="p-3 rounded contact-product"
+						th:action="@{/contact/save/{idEnterprise}(idEnterprise=${enterprise.idEnterprise})}"
+						th:object="${contact}" method="post">
+
+						<div class="mb-3">
+							<label for="inputSubject" class="form-label">Assunto:</label>
+							<input type="text" class="form-control" id="inputSubject" maxlength="" th:field="*{subject}"
+								th:required="required">
+						</div>
+
+						<div class="mb-3">
+							<textarea class="form-control py-3 px-3" placeholder="Digite sua mensagem..." cols="2"
+								rows="5" th:field="*{message}" th:required="required"></textarea>
+						</div>
+
+						<div class="d-flex justify-content-center my-2">
+							<button type="submit" class="btn btn-outline-primary">Enviar mensagem</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="container products">
+			<div class="mb-4 py-4 text-center section-title">
+				<h3 class="fs-3 fw-bold">Outros produtos deste empreendimento</h3>
+
+				<p class="fs-6">Veja mais produtos de diferentes categorias</p>
+
+				<div class="d-flex justify-content-center py-2">
+					<div class="marker-bottom"></div>
+				</div>
+			</div>
+
+			<div class="d-flex justify-content-center container-products">
+				<button onclick="slickPrev()" class="btnPassSlider bi bi-arrow-left-circle-fill fa-2x"></button>
+
+				<div class="slider-enterprise js-slider container">
+					<div class="card card-product mt-3 mb-3 ml-3" th:each="product : ${products}">
+						<div class="img-container">
+							<!-- <img class="img-product img-fluid mt-2" src="" alt="img produto"> -->
+							<img class="img-product img-fluid mt-2" th:src="|/product/imagem/${product.idProduct}|"
+								alt="img produto">
+						</div>
+
+						<div class="card-body">
+							<span><i class="bi bi-bookmark"></i></span>
+							<span th:text="${product.category}">Categoria</span><span> - </span>
+							<span class="m-0 fst-italic"
+								th:text="${product.inStock ? 'Disponível' : 'Indisponível'}">Indisponível</span>
+
+							<h3 class="fs-5 fw-semibold pt-2" th:text="${product.value}">
+								<span>R$</span> 1000.00
+							</h3>
+
+							<p class="py-1" th:text="${product.name}">Monitor Gamer Hero Full Hd 27'' G-sync 144hz Ips
+								1ms Aoc Cor Preto/Vermelho</p>
+
+							<div class="d-flex flex-wrap justify-content-center">
+								<a href="#" class="btn btn-primary py-1">
+									<i class="bi bi-pencil-square pe-2"></i>Acessar Produto
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<button onclick="slickNext()" class="fa-lg bi bi-arrow-right-circle-fill btnPassSlider"></button>
+			</div>
+		</section>
+
+	</main>
+
+	<!-- - footer - -->
+	<footer th:replace="~{fragments/footer :: footer}"></footer>
+	<!-- - End #footer - -->
+
+	<!-- JS scripts -->
+	<script th:replace="~{fragments/scripts :: jquery}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: popper}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: bootstrap}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: sideBar}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: roll}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: jquerySlide}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: jquerySlide1}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: slick-carousel}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: slider}">
+	</script>
+
+</body>
+
+</html>

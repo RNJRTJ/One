@@ -1,0 +1,88 @@
+<header th:fragment="navbar" id="header">
+	<nav class="navbar navbar-expand-lg" id="navbar">
+		<div class="container-fluid">
+			<a class="navbar-brand d-flex align-items-center me-5" href="/">
+				<img th:src="@{/imgs/favicon.png}" alt="Logo">
+				<!-- <img th:src="imgs/favicon.png" alt="Logo"> -->
+			</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link fw-semibold" aria-current="page" href="/">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link fw-semibold" href="/about">Sobre nós</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link fw-semibold" href="/partnersClients">Parceiros e clientes</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link fw-semibold" href="/contact">Contatos</a>
+					</li>
+
+					<div class="buttons-navbar">
+						<li class="nav-item utilities-item ms-0  ps-4">
+							<div class="utilities-div utilities-focus rounded-pill">
+								<a href="/adminSide"
+									class="nav-link d-flex align-items-center text-decoration-none me-1">
+									<!-- <img src="../imgs/user-default.svg" id="userPefil" class="rounded-circle me-2" alt="Área restrita"> -->
+									<img th:src="@{/imgs/user-default.svg}" id="userPefil" class="rounded-circle me-2"
+										alt="Área restrita">
+									<span id="userName">Área restrita</span>
+								</a>
+							</div>
+						</li>
+					</div>
+
+					<div class="buttons-navbar">
+						<li class="nav-item utilities-item ms-0">
+							<div class="utilities-div rounded-pill pe-3">
+								<a href="/employerAdmin"
+									class="nav-link d-flex align-items-center text-decoration-none ms-1">
+									<!-- <img src="imgs/warning-default.svg" class="rounded-circle me-2" alt="Área do empreendedor"> -->
+									<img th:src="@{/imgs/warning-default.svg}" class="rounded-circle me-2"
+										alt="Área do empreendedor">
+									<span id="restrictedArea">Área do empreendedor</span>
+								</a>
+							</div>
+						</li>
+					</div>
+
+					<div class="buttons-navbar">
+						<li class="nav-item utilities-item ms-0  ps-4">
+							<div class="utilities-div utilities-focus rounded-pill">
+								<a href="/login?login=false"
+									class="nav-link d-flex align-items-center text-decoration-none me-1">
+									<!-- <img src="../imgs/user-default.svg" id="userPefil" class="rounded-circle me-2" alt="Login"> -->
+									<img th:src="@{/imgs/user-default.svg}" id="userPefil" class="rounded-circle me-2"
+										alt="Login">
+									<span id="userName">Login</span>
+								</a>
+							</div>
+						</li>
+					</div>
+				</ul>
+
+				<div class="nav-help ms-0 ps-2">
+					<a class="nav-link fs-6 fw-semibold" href="/help">Ajuda
+						<button class="btn btn-outline-primary rounded-circle ms-2 fw-semibold" type="submit">?</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<div th:fragment="space" class="divSpace">
+	<h1>Espaço</h1>
+</div>

@@ -1,0 +1,50 @@
+[
+    {
+      "idEnterprise": "1",
+      "fantasyName": "Loja do João",
+      "description": "Loja do João",
+      "numStore": "1"
+    },
+    {
+      "idEnterprise": "2",
+      "fantasyName": "Loja do Rodrigo",
+      "description": "Loja do Rodrigo",
+      "numStore": "2"
+    },
+    {
+      "idEnterprise": "3",
+      "fantasyName": "Loja do Pedro",
+      "description": "Loja do Pedro",
+      "numStore": "3"
+    },
+    {
+      "idEnterprise": "4",
+      "fantasyName": "Loja do Ricardo",
+      "description": "Loja do Ricardo",
+      "numStore": "4"
+    },
+    {
+      "idEnterprise": "5",
+      "fantasyName": "Loja da Rayza",
+      "description": "Loja da Rayza",
+      "numStore": "5"
+    },
+    {
+      "idEnterprise": "6",
+      "fantasyName": "Loja do Robson",
+      "description": "Loja do Robson",
+      "numStore": "6"
+    },
+    {
+      "idEnterprise": "7",
+      "fantasyName": "Loja do Jeferson",
+      "description": "Loja do Jeferson",
+      "numStore": "7"
+    },
+    {
+      "idEnterprise": "8",
+      "fantasyName": "Loja do Igor",
+      "description": "Loja do Igor",
+      "numStore": "8"
+    }
+  ]

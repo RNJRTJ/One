@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head th:replace="~{fragments/head :: head('CF | Administrativo')}"></head>
+
+<body>
+
+	<!-- - header - -->
+    <header th:replace="~{fragments/header :: navbar}" ></header> 
+    <div th:replace="~{fragments/header :: space}"></div> 
+	<!-- End #header -->
+	
+	<!--Side Bar-->
+    <nav th:replace="~{fragments/asideAdmin :: asideAdmin}"> </nav>
+			
+	<!--Conteudo página-->
+	<div class="page-wrapper chiller-theme">
+		<div class="container d-flex justify-content-center mb-5 mt-5">
+			<h1>Feiras cadastradas</h1>
+		</div>
+	</div>
+	
+	
+	
+	<!--****************MUDAR AS ROTAS***************-->
+	<div class="container mt-3">
+		<h2>Lista de Feiras</h2>
+		<a class="btn btn-primary mb-2" th:href="@{/}">Adicionar Feira</a>
+		
+		<table class="table">
+			<thead class="cabecalho-tabela">
+				<tr>
+					<th>ID</th>
+					<th>Nome</th>					
+					<th>Mapa</th>
+					<th>Endereços</th>
+					<th>Ações</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="marketplace : ${marketplace}">
+					<td th:text="${marketplace.idMarket}"></td>
+					<td th:text="${marketplace.nameMarket}"></td>										
+					<td><img th:src="${marketplace.mapUrl}" alt="Imagem do Produto" style="max-width: 100px; max-height: 100px;" /></td>
+					<td th:text="${marketplace.address}"></td>					
+					<td>
+						<a class="btn btn-info btn-sm"
+							th:href="@{/marketplace/editar/{id}(id=${marketplace.idMarket})}">Editar</a>
+						<a class="btn btn-success btn-sm"
+							th:href="@{/marketplace/deletar/{id}(id=${marketplace.idMarket})}">Ver Lojas</a>
+						<a class="btn btn-danger btn-sm"
+							th:href="@{/marketplace/deletar/{id}(id=${marketplace.idMarket})}">Excluir</a>							
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+    <!-- JS scripts -->
+    	<script th:replace="~{fragments/scripts :: jquery}">		
+		</script>
+
+		<script th:replace="~{fragments/scripts :: popper}">
+	    </script>
+	    
+    	<script th:replace="~{fragments/scripts :: bootstrap}">
+    	</script>
+		
+		<script th:replace="~{fragments/scripts :: sideBar}">			
+		</script>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head('CF | Parceiros e clientes')}"></head>
+
+<body>
+	<!-- - header - -->
+	<header th:replace="~{fragments/header :: navbar}"></header>
+	<div th:replace="~{fragments/header :: space}"></div>
+	<!-- End #header -->
+
+	<!-- - main - -->
+	<main>
+
+		<section id="partners">
+			<div class="container">
+
+				<div class="section-title py-4">
+					<h2 class="fs-3 fw-bold">Conheça mais das nossas parcerias:</h2>
+					<p class="fs-5 pb-2 fw-light">Veja as instituições que confiam e apoiam nosso trabalho</p>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6">
+						<p>
+							Ter parceiros e clientes em qualquer projeto é fundamental e vai muito além de uma simples
+							relação comercial.
+							o <strong>Comércio Fácil</strong>, em parceria com prefeituras e organizações privadas,
+							busca impactar diretamente a vida de empreendedores e
+							consumidores locais, expandindo os horizontes da comunidade.
+						</p>
+
+						<p>
+							Com o apoio dessas instituições, conseguimos alavancar processos de vendas, melhorando a
+							descoberta de produtos e contribuindo para a expansão do empreendedorismo e o crescimento
+							econômico de
+							pessoas de baixa renda.
+						</p>
+
+						<p>
+							Saiba mais! Veja algumas das nossas intituições-clientes:
+						</p>
+					</div>
+
+					<div class="col-lg-6">
+						<img src="https://github.com/squad25-recodePro23/comercioFacil-squad25/assets/85527665/49ef7082-92f0-4e05-b04e-3014aa910a11"
+							alt="Img" class="img-fluid rounded">
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="partners-tabs" class="py-4">
+			<div class="container">
+
+				<ul class="nav nav-tabs row gy-4 d-flex justify-content-between">
+					<li class="nav-item col-6 col-md-5 col-lg-3">
+						<a class="nav-link active show text-center tab-iten" data-bs-toggle="tab"
+							data-bs-target="#tab-1">
+							<i class="bi bi-cart4 fs-2"></i>
+							<h4 class="fs-4 pt-1 fw-semibold">Barracão da barra</h4>
+						</a>
+					</li><!-- End Tab 1 Nav -->
+
+					<li class="nav-item col-6 col-md-5 col-lg-3">
+						<a class="nav-link text-center tab-iten" data-bs-toggle="tab" data-bs-target="#tab-2">
+							<i class="bi bi-shop-window fs-2"></i>
+							<h4 class="fs-4 pt-1 fw-semibold">Feira livre de Maricá</h4>
+						</a>
+					</li><!-- End Tab 2 Nav -->
+
+					<li class="nav-item col-6 col-md-5 col-lg-3">
+						<a class="nav-link text-center tab-iten" data-bs-toggle="tab" data-bs-target="#tab-3">
+							<i class="bi bi-bag fs-2"></i>
+							<h4 class="fs-4 pt-1 fw-semibold">Sacolão Teotônio Vilela</h4>
+						</a>
+					</li><!-- End Tab 3 Nav -->
+
+					<li class="nav-item col-6 col-md-5 col-lg-3">
+						<a class="nav-link text-center tab-iten" data-bs-toggle="tab" data-bs-target="#tab-4">
+							<i class="bi bi-tags-fill fs-2"></i>
+							<h4 class="fs-4 pt-1 fw-semibold">Shopping Lugos</h4>
+						</a>
+					</li><!-- End Tab 4 Nav -->
+				</ul>
+
+				<div class="tab-content pt-5 pb-1">
+					<div class="tab-pane active show" id="tab-1">
+						<div class="row gy-4 tab-iten-details">
+							<div class="col-lg-8 order-2 order-lg-1">
+								<h3 class="fs-4 pb-3 d-flex align-items-center">Barracão da barra <span
+										class="fs-6 ps-3">Barra do Mendes - BA</span></h3>
+								<p>
+									O barracão da barra constitui um ponto de comércio livre na cidade e,
+									mais que isso, representa uma boa oportunidade para microempreendedores apresentarem
+									seus produtos, dos mais variados tipos.
+									Mesmo com pouco menos de 14 mil habitantes na cidade, consegue reunir centenas de
+									comerciantes e consumidores dos
+									povoados e cidades vizinhas. Com o <strong>Comércio Fácil</strong> adquiriram:
+								</p>
+
+								<ul type="none" class="ps-1">
+									<li class="pb-2"><i class="bi bi-check-circle-fill pe-1"></i> Maior fluidez do
+										processo de vendas e deslocamento de consumidores.</li>
+									<li class="pb-2"><i class="bi bi-check-circle-fill pe-1"></i> Aumento na demanda e
+										venda de produtos.</li>
+									<li class="pb-2"><i class="bi bi-check-circle-fill pe-1"></i> Representatividade
+										digital dos comerciantes da comunidade local.</li>
+								</ul>
+							</div>
+
+							<div class="col-lg-4 order-1 order-lg-2 text-center">
+								<img src="https://github.com/squad25-recodePro23/comercioFacil-squad25/assets/85527665/b203a51e-34bd-450f-a44b-4f9f2c7e4754"
+									alt="Barracão barramendense" class="img-fluid rounded">
+							</div>
+						</div>
+					</div><!-- End Tab Content 1 -->
+
+					<div class="tab-pane" id="tab-2">
+						<div class="row gy-4 tab-iten-details">
+							<div class="col-lg-8 order-2 order-lg-1">
+								<h3 class="fs-4 pb-3 d-flex align-items-center">Feira livre de Maricá <span
+										class="fs-6 ps-3">Maricá - RJ</span></h3>
+
+								<p>
+									A feira livre de Maricá é um vibrante ponto de encontro semanal que dá vida à
+									cidade. Realizada regularmente, a feira é muito mais que um mercado; é um cenário
+									pulsante de cores, sabores e cultura. Com o <strong>Comércio Fácil</strong>,
+									encontrar o produto
+									ideal
+									se tornou uma tarefa muito mais simples: pesquisando online e percorrendo os
+									corredores da feira.
+								</p>
+							</div>
+
+							<div class="col-lg-4 order-1 order-lg-2 text-center">
+								<img src="https://github.com/squad25-recodePro23/comercioFacil-squad25/assets/85527665/21a0983b-dabb-4329-a9c5-4094a09f23b0"
+									alt="Feira livre de Maricá" class="img-fluid rounded">
+							</div>
+						</div>
+					</div><!-- End Tab Content 2 -->
+
+					<div class="tab-pane" id="tab-3">
+						<div class="row gy-4 tab-iten-details">
+							<div class="col-lg-8 order-2 order-lg-1">
+								<h3 class="fs-4 pb-3 d-flex align-items-center">Sacolão Teotônio Vilela <span
+										class="fs-6 ps-3">São Paulo - SP</span></h3>
+
+								<p>
+									Tudo pode ser encontrado no mercado municipal Teotônio Vilela, desde produtos
+									alimentícios até
+									itens de banho e decoração. Cada produto distribuído entre as lojas e barracas do
+									estabelecimento
+									passou a contar com muito mais organização após a implantação da plataforma
+									<strong>Comércio Fácil</strong>,
+									contribuindo com a aproximação de muito mais clientes dentro e fora da comunidade
+									local.
+								</p>
+							</div>
+
+							<div class="col-lg-4 order-1 order-lg-2 text-center">
+								<img src="https://github.com/squad25-recodePro23/comercioFacil-squad25/assets/85527665/29d786fa-6fd3-4705-a3ed-e5bb58a30895"
+									alt="Sacolão Teotônio Vilela" class="img-fluid rounded">
+							</div>
+						</div>
+					</div><!-- End Tab Content 3 -->
+
+					<div class="tab-pane" id="tab-4">
+						<div class="row gy-4 tab-iten-details">
+							<div class="col-lg-8 order-2 order-lg-1">
+								<h3 class="fs-4 pb-3 d-flex align-items-center">Shopping Lugos <span
+										class="fs-6 ps-3">Irecê - BA</span></h3>
+
+								<p>
+									Considerado o primeiro shopping da microrregião, o Lugos constitui um espaço físico
+									onde comerciantes locais podem desenvolver seus negócios. O <strong>Comércio
+										Fácil</strong> fomentou o mercado levando os
+									pequenos empreendedores, antes limitados ao estabelecimento, para o mundo digital e
+									atraindo com isso cada vez mais
+									clientes.
+								</p>
+							</div>
+
+							<div class="col-lg-4 order-1 order-lg-2 text-center">
+								<img src="https://github.com/squad25-recodePro23/comercioFacil-squad25/assets/85527665/ed734712-5bcf-4ddf-a673-8e02657bac14"
+									alt="Shopping Lugos" class="img-fluid rounded">
+							</div>
+						</div>
+					</div><!-- End Tab Content 4 -->
+
+				</div>
+
+			</div>
+		</section><!-- End Features Section -->
+
+		<section id="future-partners" class="container-fluid py-4">
+			<div class="container">
+
+				<div class="mb-3 pb-4 text-center section-title">
+					<p class="fs-6 my-1">Nossas parcerias :</p>
+					<h3 class="fs-3 fw-bold">Outras organizações da plataforma</h3>
+
+					<div class="d-flex justify-content-center py-2">
+						<div class="marker-bottom"></div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-sm-6 col-12 my-3 d-flex justify-content-center">
+						<div class="card card-market text-center">
+							<img src="https://github.com/squad25-recodePro23/comercioFacil-squad25/assets/85527665/d64fd08d-0604-45bf-9139-0d9dccfadfd6" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title pb-2">Feira Grande</h5>
+								<!-- <p class="card-text">Some quick example text to build on
+									the card title and make up the bulk of the card's content.</p> -->
+								<!-- <a href="#" class="btn btn-primary">Ver mais</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-sm-6 col-12 my-3 d-flex justify-content-center">
+						<div class="card card-market text-center">
+							<img src="https://github.com/squad25-recodePro23/comercioFacil-squad25/assets/85527665/ee523bdb-4611-4cf9-bf72-a2af92efd9cb" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title pb-2">Mercado municipal de Várzea</h5>
+								<!-- <p class="card-text">Some quick example text to build on
+									the card title and make up the bulk of the card's content.</p> -->
+								<!-- <a href="#" class="btn btn-primary">Ver mais</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-sm-6 col-12 my-3 d-flex justify-content-center">
+						<div class="card card-market text-center">
+							<img src="https://github.com/squad25-recodePro23/comercioFacil-squad25/assets/85527665/ceb4158d-6ee9-428b-955c-b6a2fc8953c4" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title pb-2">Shopping Varejista</h5>
+								<!-- <p class="card-text">Some quick example text to build on
+									the card title and make up the bulk of the card's content.</p> -->
+								<!-- <a href="#" class="btn btn-primary"><i class="bi bi-plus-circle"></i></a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!--		<div-->
+		<!--			th:replace="~{fragments/card-part-cli :: card-part-cli('https://lh3.googleusercontent.com/p/AF1QipN0HAmGf2xTXmJWl3__wbKpW3R3-F5bvT8S54xC=s680-w680-h510','SP - São Paulo', 'Sacolão Teotonio Vilela')}">-->
+		<!--		</div>-->
+
+		<!--		<div-->
+		<!--			th:replace="~{fragments/card-part-cli :: card-part-cli('https://media-cdn.tripadvisor.com/media/photo-s/09/6b/fd/c5/mercado-municipal-de.jpg','MG - São Paulo', 'Mercadão municipal de Juiz de Fora')}">-->
+		<!--		</div>-->
+
+		<!--		<div-->
+		<!--			th:replace="~{fragments/card-part-cli :: card-part-cli('https://www.rededegestoresecosol.org.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-04-at-10.17.59-1-696x392-1.jpeg','RJ - Maricá', 'Feira livre de Maricá')}">-->
+		<!--		</div>-->
+
+		<!--		<div-->
+		<!--			th:replace="~{fragments/card-part-cli :: card-part-cli('https://meulugar.quintoandar.com.br/wp-content/uploads/2022/01/Feira-da-Liberdade-visitantes.jpg','SP - São Paulo', 'Feira livre da Liberdade')}">-->
+		<!--		</div>-->
+
+		<!--		<div-->
+		<!--			th:replace="~{fragments/card-part-cli :: card-part-cli('https://i0.wp.com/dolcemorumbi.com/wp-content/uploads/2023/03/mercadao-sp-1-mercado-municipal-de-sao-paulo-scaled.jpg?fit=2560%2C1707&ssl=1','SP - São Paulo', 'Mercadão municipal de São Paulo')}">-->
+		<!--		</div>-->
+
+	</main>
+	<!-- End .container -->
+
+	<!-- - footer - -->
+	<footer th:replace="~{fragments/footer :: footer}"></footer>
+	<!-- - End #footer - -->
+
+	<!-- JS scripts -->
+	<script th:replace="~{fragments/scripts :: popper}">
+	</script>
+	<script th:replace="~{fragments/scripts :: bootstrap}">
+	</script>
+
+</body>
+
+</html>

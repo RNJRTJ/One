@@ -1,0 +1,59 @@
+<nav th:fragment="asideAdmin" id="sidebar" class="sidebar-wrapper">
+	<div class="custom-menu">
+		<button type="button" id="sidebarCollapse" class="btn">
+			<span class="bi bi-list text-light"></span>
+		</button>
+	</div>
+	<div class="sidebar-content">
+		<div class="sidebar-brand">
+			<a href="#">Comério Fácil</a>
+		</div>
+
+		<div class="sidebar-header">
+			<div class="user-pic">
+				<img src="https://media.licdn.com/dms/image/D4D03AQG4rKMeNk0kvw/profile-displayphoto-shrink_800_800/0/1701791991275?e=1710979200&v=beta&t=Z4XWB1TXoUkfuFfMNmLoHZuvFh_xhmQMBt18vdOW_TI"
+					class="img-fluid img-rounded" style="width:50px;" />
+			</div>
+			<div class="user-info">
+				<span class="user-name">Pedro Goya</span>
+				<span class="user-role active">Administrator</span>
+			</div>
+		</div>
+
+		<div class="sidebar-menu">
+			<ul class="list-unstyled components">
+				<li class="header-menu">
+					<span>General</span>
+				</li>
+
+				<li class="active">
+					<a href="#" th:href="@{/}">
+						<span class="fa-lg bi bi-house mr-3"></span>
+						<span class="">Voltar a home</span>
+					</a>
+				</li>
+
+				<li class="">
+					<a href="#">
+						<span class="fa-lg bi bi-shop-window mr-3"></span>
+						<span class="">Feiras</span>
+					</a>
+				</li>
+
+				<li class="">
+					<a href="#">
+						<span class="fa-lg bi bi-shop mr-3"></span>
+						<span class="">Empreendimentos</span>
+					</a>
+				</li>
+
+				<li class="">
+					<a href="/">
+						<span class="fa-lg bi bi-box-arrow-right mr-3"></span>
+						<span class="">Sair da conta</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

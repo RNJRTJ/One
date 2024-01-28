@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head('CF | Entre ou cadastre-se')}"></head>
+
+<body>
+
+	<!-- - header - -->
+	<header th:replace="~{fragments/header :: navbar}"></header>
+	<div th:replace="~{fragments/header :: space}"></div>
+	<!-- End #header -->
+
+	<!-- - main - -->
+	<main class="container-fluid main" id="login-main">
+
+		<section id="loginPane" class="container py-4 my-5">
+			<div class="row justify-content-center align-items-center rounded mx-1">
+				<div class="col-md-7 my-2 px-5 login-form rounded">
+					<div class="section-title pt-4 pb-2">
+						<h2 class="fs-3 fw-bold mt-4">Faça seu login:</h2>
+						<p class="fs-5 pb-2 fw-light">Preencha com seu
+							<span class="fw-bold">e-mail e senha</span> ou
+							<span class="fw-bold">cadastre-se</span>.
+						</p>
+					</div>
+
+					<form action="/login" method="post">
+						<div class="form-outline mb-3">
+							<label class="form-label ps-1" for="form3Example3">Seu e-mail:</label>
+							<input type="email" id="form3Example3" class="form-control" placeholder="e-mail" name="email" required/>
+						</div>
+
+						<div class="form-outline mb-3">
+							<label class="form-label ps-1" for="form3Example4">Sua senha:</label>
+							<input type="password" id="form3Example4" class="form-control" placeholder="Sua senha" name="password" required/>
+						</div>
+
+						<div class="py-3 d-flex justify-content-center">
+							<div class="text-center">
+								<button type="submit" class="btn btn-primary rounded py-2 px-5">Entrar</button>
+
+								<p class="small fw-medium my-1 py-2">Não tem uma conta?
+									<a href="#" class="link-danger fw-semibold">Cadastre-se</a>
+								</p>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-md-5 my-3 d-flex justify-content-center p-3 login-item">
+					<img src="../imgs/mobile.gif" alt="Sample image">
+				</div>
+			</div>
+		</section>
+
+	</main> <!-- End .container -->
+
+
+	<!-- - footer - -->
+	<footer th:replace="~{fragments/footer :: footer}"></footer>
+	<!-- - End #footer - -->
+
+	<!-- JS scripts -->
+	<script th:replace="~{fragments/scripts :: popper}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: bootstrap}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: fontawesome}">
+	</script>
+
+	<script th:src="@{/js/loginConfirm.js}" defer></script>
+
+</body>
+
+</html>

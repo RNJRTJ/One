@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head('CF | Ajuda')}"></head>
+
+<body>
+
+	<!-- - header - -->
+	<header th:replace="~{fragments/header :: navbar}"></header>
+	<div th:replace="~{fragments/header :: space}"></div>
+	<!-- End #header -->
+
+	<!-- - main - -->
+	<main class="container main">
+
+		<section class="pt-1 mt-3">
+			<div class="col-lg-12 section-title py-3">
+				<h2 class="fs-2 fw-bold mt-5">Dúvidas? Acesse nossos guias da plataforma</h2>
+				<p class="fs-5 pb-2 fw-light">Com eles você poderá se informar por artigos e vídeos intuitivos!
+				</p>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6 my-3 text-center help-item">
+					<div class="mb-2 py-3">
+						<h3 class="fs-3 fw-semibold"><i class="bi bi-person-plus fs-2 pe-3"></i>Para clientes</h3>
+					</div>
+
+					<div class="tutorials-item py-4 px-5 rounded">
+						<img src="https://github.com/squad25-recodePro23/comercioFacil-squad25/assets/85527665/e2a678ca-63f8-4f5f-9fc5-00ed7074fbc8" class="img-fluid" alt="">
+						<p class="pt-4 pb-1 px-2">Entenda como encontrar exatamente o produto que procura, próximo a
+							você.</p>
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+							data-bs-target="#modalClients">
+							<i class="bi bi-plus-circle fs-6 pe-2"></i>Saiba mais
+						</button>
+					</div>
+				</div>
+
+				<div class="col-lg-6 my-3 text-center">
+					<div class="mb-2 py-3">
+						<h3 class="fs-3 fw-semibold"><i class="bi bi-buildings fs-2 pe-3"></i>Para empreendedores</h3>
+					</div>
+
+					<div class="tutorials-item py-4 px-5 rounded">
+						<img src="https://github.com/squad25-recodePro23/comercioFacil-squad25/assets/85527665/9fdca72d-d8fd-4960-a52d-a056cd6dbb64" class="img-fluid" alt="">
+						<p class="pt-4 pb-1 px-2">Conheça como nossa plataforma pode impulsionar seu empreendimento.</p>
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+							data-bs-target="#modalEmployers">
+							<i class="bi bi-plus-circle fs-6 pe-2"></i>Saiba mais
+						</button>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="pb-4">
+			<div class="py-2 my-4">
+				<p class="fs-6 my-1">Fique por dentro</p>
+				<h3 class="fs-3 fw-bold"><span class="marker"></span>Dúvidas frequentes:</h3>
+			</div>
+
+			<div class="accordion" id="accordionExample">
+				<div class="accordion-item my-3">
+					<h2 class="accordion-header">
+						<button class="accordion-button question-item fw-semibold" type="button"
+							data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+							aria-controls="collapseOne">
+							<i class="bi bi-question-circle-fill fs-4 pe-3"></i>
+							Qual é o público-alvo do Comércio Fácil?
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							A solução busca atingir, em primeira instância, <strong>micro e pequenos empreendedores de
+								baixa
+								renda</strong>, proprietários de negócios físicos dispostos em pequenos centros
+							comerciais (feiras
+							livres, barracões de comércio e aglomerados de lojas), interessados em impulsionar a
+							divulgação de seus produtos. Visa também alcançar potenciais <strong>clientes
+								consumidores</strong> com
+							dificuldades para distinguir, dentro do comércio local, produtos que atendam especificamente
+							às suas demandas e a maneira mais eficaz de adquiri-los.
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item my-3">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed question-item fw-semibold" type="button"
+							data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+							aria-controls="collapseTwo">
+							<i class="bi bi-question-circle-fill fs-4 pe-3"></i>
+							Como visualizar os produtos de feiras comerciais da minha região?
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							É simples! Basta acessar a seção home da nossa plataforma e informar o estado onde a feira
+							desejada se localiza. Logo ao lado, aparecerá a lista com todas as feiras disponíveis para o
+							estado selecionado. Clique em uma delas para ver seu mapa, seus empreendimentos e produtos.
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item my-3">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed question-item fw-semibold" type="button"
+							data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+							aria-controls="collapseThree">
+							<i class="bi bi-question-circle-fill fs-4 pe-3"></i>
+							Sou empreendedor, como posso participar da plataforma?
+						</button>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							É necessário que a feira comercial (agrupamento de empreendimentos) da qual seu
+							estabelecimento faz parte deseje fazer uso da plataforma. Com os requisitos mínimos
+							cumpridos, o <strong>Comércio Fácil</strong> mapeará sua feira a partir das informações
+							recebidas, e seu
+							estabelecimento passará a estar incluso no sistema.
+
+							<p class="pt-1 m-0">Não fique de fora! Converse com a administração da sua feira ou entre em
+								contato conosco.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main> <!-- End .container -->
+
+	<!-- - footer - -->
+	<footer th:replace="~{fragments/footer :: footer}"></footer>
+	<!-- - End #footer - -->
+
+	<!-- #modalClients -->
+	<div class="modal fade" id="modalClients" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">Turorias para clientes</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+
+				<div class="modal-body">
+					<div class="container-video p-3">
+						<div class="video">
+							<iframe src="https://www.youtube.com/embed/CaS0IsRaQsk?si=3Ps8DTLpH-0nYxGQ"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+
+					<p class="py-4">
+						Assista ao vídeo tutorial básico sobre como utilizar o mapa interativo de cada feira em nossa
+						plataforma. Com ele, você entenderá como é prático encontrar o que busca e como, na maioria das
+						vezes, o produto desejado está mais próximo do que imagina.
+					</p>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aprendi!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- #modalEmployers -->
+	<div class="modal fade" id="modalEmployers" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">Turorias para empreendedores</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+
+				<div class="modal-body">
+					<div class="container-video p-3">
+						<div class="video">
+							<iframe src="https://www.youtube.com/embed/CaS0IsRaQsk?si=3Ps8DTLpH-0nYxGQ"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+
+					<p class="py-4">
+						Assista ao vídeo tutorial básico sobre como habilitar seu empreendimento no nosso sistema. Após
+						essa etapa, seu estabelecimento já estará disponível, e seus produtos passarão a ser divulgados.
+					</p>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aprendi!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- JS scripts -->
+	<script th:replace="~{fragments/scripts :: popper}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: bootstrap}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: fontawesome}">
+	</script>
+
+	<script th:replace="~{fragments/scripts :: modal}">
+	</script>
+
+</body>
+
+</html>

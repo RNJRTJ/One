@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head th:replace="~{fragments/head :: head('CF | Empreendedor')}"></head>
+
+<body>
+	
+	<!-- - header - -->
+    <header th:replace="~{fragments/header :: navbar}" ></header> 
+    <div th:replace="~{fragments/header :: space}"></div> 
+	<!-- End #header -->
+
+	<!--Side Bar-->
+    <nav th:replace="~{fragments/asideEmployer :: asideEmployer}"> </nav>	
+	
+	
+
+	
+	<!--Conteudo página-->
+	<div class="page-wrapper chiller-theme">
+		<div class="container d-flex justify-content-center mt-5">
+			<h1>Notificações</h1>
+		</div>
+	</div>
+	
+	<div class="container">
+		
+		<div class="px-3 mt-4">
+                <div class="section-title py-1">
+                    <h2 class="fs-2 fw-bold">Suas notificações</h2>
+                    <p class="fs-5 pb-2">Gerencie as notificações que seus clientes te enviam</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-10">
+                        <p class="fs-6 mb-2">Na sua página de notificações estarão listadas todas as mensagens que seus cliente te enviam, aqui você será apenas notificado.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+		
+		
+		
+		<div class="d-flex justify-content-start mt-5">
+			<h3>Lista de notificações</h3>
+		</div>
+		<div class="conteudo-notification mb-5" id="conteudoNotification">
+									
+			<!--Card de notificação-->
+			<!--<div class="notification mb-4">
+				<div class="d-flex justify-content-between">
+					<div class="d-block mb-2">
+						<h5 th:text="${}">Titulo da Notificação</h5>
+						<h6 th:text="${}">Nome do usuário</h6>	
+					</div> 
+					
+					<h5 th:text="${}">Nome do empreendimento</h5>
+				</div>
+				
+				<div class="text-notification d-flex justify-content-between row row-cols-1 ">
+					<p th:text="${}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, explicabo nam vero tenetur pariatur debitis! Voluptatem consequuntur nostrum rerum blanditiis, aut repellendus, natus magnam quasi sequi neque consequatur repudiandae maiores.</p>
+					<div class="col-lg-2 mb-2">
+                        <a href="/enterprise/show" class="btn btn-primary d-flex align-items-center justify-content-center px-1"><i class="bi bi-check2-circle fs-4 pe-2"></i> Lido</a>
+                    </div>
+				</div>
+			</div>-->			
+			<!--Card de notificação-->
+			<div class="notification mb-4">
+				<div class="d-flex justify-content-between">
+					<div class="d-block mb-2">
+						<h5>Titulo da Notificação</h5>
+						<h6>Nome do usuário</h6>	
+					</div> 
+					
+					<h5>Nome do empreendimento</h5>
+				</div>
+				
+				<div class="text-notification d-flex justify-content-between row row-cols-1 ">
+					
+					<p class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, explicabo nam vero tenetur pariatur debitis! Voluptatem consequuntur nostrum rerum blanditiis, aut repellendus, natus magnam quasi sequi neque consequatur repudiandae maiores.</p>
+					<div class="col-lg-2 mb-2">
+                        <a href="#" class="btn btn-primary d-flex align-items-center justify-content-center px-1"><i class="bi bi-check2-circle fs-4 pe-2"></i> Lido</a>
+                    </div>
+				</div>
+			</div>
+			
+			<!--Card de notificação-->
+			<div class="notification mb-4">
+				<div class="d-flex justify-content-between">
+					<div class="d-block mb-2">
+						<h5>Titulo da Notificação</h5>
+						<h6>Nome do usuário</h6>	
+					</div> 
+					
+					<h5>Nome do empreendimento</h5>
+				</div>
+				
+				<div class="text-notification d-flex justify-content-between row row-cols-1 ">
+					
+					<p class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, explicabo nam vero tenetur pariatur debitis! Voluptatem consequuntur nostrum rerum blanditiis, aut repellendus, natus magnam quasi sequi neque consequatur repudiandae maiores.</p>
+					<div class="col-lg-2 mb-2">
+                        <a href="#" class="btn btn-primary d-flex align-items-center justify-content-center px-1"><i class="bi bi-check2-circle fs-4 pe-2"></i> Lido</a>
+                    </div>
+				</div>
+			</div>	
+			
+			<!--Card de notificação-->
+			<div class="notification mb-4">
+				<div class="d-flex justify-content-between">
+					<div class="d-block mb-2">
+						<h5>Titulo da Notificação</h5>
+						<h6>Nome do usuário</h6>	
+					</div> 
+					
+					<h5>Nome do empreendimento</h5>
+				</div>
+				
+				<div class="text-notification d-flex justify-content-between row row-cols-1 ">
+					
+					<p class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, explicabo nam vero tenetur pariatur debitis! Voluptatem consequuntur nostrum rerum blanditiis, aut repellendus, natus magnam quasi sequi neque consequatur repudiandae maiores.</p>
+					<div class="col-lg-2 mb-2">
+                        <a href="#" class="btn btn-primary d-flex align-items-center justify-content-center px-1"><i class="bi bi-check2-circle fs-4 pe-2"></i> Lido</a>
+                    </div>
+				</div>
+			</div>									
+			
+
+		</div>	
+	</div>
+	
+	<!-- - footer - -->
+    <footer th:replace="~{fragments/footer :: footer}"></footer> 
+    <!-- - End #footer - -->
+
+    <!-- JS scripts -->
+    	<script th:replace="~{fragments/scripts :: jquery}">		
+		</script>
+
+		<script th:replace="~{fragments/scripts :: popper}">
+	    </script>
+	    
+    	<script th:replace="~{fragments/scripts :: bootstrap}">
+    	</script>
+		
+		<script th:replace="~{fragments/scripts :: sideBar}">			
+		</script>
+    	
+    	<script th:replace="~{fragments/scripts :: roll}">
+			
+		</script>
+    
+</body>
+
+</html>

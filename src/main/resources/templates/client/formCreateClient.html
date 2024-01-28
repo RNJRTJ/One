@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head('CF | Entre ou cadastre-se')}"></head>
+
+<body>
+
+  <!-- - header - -->
+  <header th:replace="~{fragments/header :: navbar}"></header>
+  <!-- End #header -->
+
+  <div th:replace="~{fragments/header :: space}"></div>
+
+  <!-- - main - -->
+  <main class="container main">
+
+    <div class="page-wrapper chiller-theme">
+      <div class="container d-flex justify-content-center mt-5">
+        <h1 class="text-center">Cadastre-se</h1>
+      </div>
+    </div>
+
+    <section class="">
+      <div class="container-fluid register">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+
+          <div class="col-md-9 col-lg-6 col-xl-5 gif-cf">
+            <img src="imgs/mobile.gif" class="gif-img" alt="Sample image">
+          </div>
+
+          <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 form-register">
+
+            <div class="section-title py-4 text-form-register">
+              <h2 class="fs-3 fw-bold">Realize seu cadastro:</h2>
+              <p class="fs-5 pb-2 fw-light">Preencha com
+                os dados necessários e após preencher o formulário, clique no botão
+                <span class="fw-bold">cadastrar</span>
+              </p>
+              <p>
+                <span class="fw-bold">* são orbigatórios</span>
+              </p>
+            </div>
+
+            <form id="formRegisterCli">
+              <div class="form-outline mb-4">
+                <input type="text" id="userName" class="form-control form-control-lg" placeholder="Nome Completo" />
+                <label class="form-label" for="userName">Seu nome completo*</label>
+              </div>
+
+              <!-- Login input -->
+              <div class="form-outline mb-4">
+                <input type="text" id="login" class="form-control form-control-lg" placeholder="Seu Login" />
+                <label class="form-label" for="">Login de acesso (coloque seu 1º nome por exemplo)*</label>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="email" class="form-control form-control-lg" placeholder="E-mail" />
+                <label class="form-label" for="">Seu melhor E-mail*</label>
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-3">
+                <input type="password" id="password" class="form-control form-control-lg" placeholder="Sua senha" />
+                <label class="form-label" for="">Senha*</label>
+              </div>
+
+              <div class="text-center text-lg-start mt-4 pt-2">
+                <button type="submit" class="btn btn-primary btn-lg btn-submit-form">Cadastrar</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main> <!-- End .container -->
+
+  <!-- - footer - -->
+  <footer th:replace="~{fragments/footer :: footer}"></footer>
+  <!-- - End #footer - -->
+
+  <!-- JS scripts -->
+  <script th:replace="~{fragments/scripts :: popper}">
+  </script>
+  <script th:replace="~{fragments/scripts :: bootstrap}">
+  </script>
+  <script th:replace="~{fragments/scripts :: fontawesome}">
+  </script>
+  <script src="js/registerValidations.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<div th:fragment="card-team(img, github, link, name, funct, resp)" class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100" >
+    <div class="member-img">
+        <img th:src="${img}" class="img-fluid" alt="">
+        <div class="social">
+            <a th:href="${github}" target="_blank"><i class="bi bi-github"></i></a>
+            <a th:href="${link}" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="member-info text-center">
+        <h4 class="fs-5" th:text="${name}">Pedro Goya</h4>
+		<span class="fs-6 fw-light" th:text="${funct}">Líder</span>
+		<p class="fs-6 text-center" th:text="${resp}">Responsável pelo desenvolvimento da
+			plataforma.</p>
+    </div>
+</div>

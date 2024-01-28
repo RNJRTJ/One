@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head th:replace="~{fragments/head :: head('CF | Administrativo')}"></head>
+
+<body>
+
+	<!-- - header - -->
+    <header th:replace="~{fragments/header :: navbar}" ></header> 
+    <div th:replace="~{fragments/header :: space}"></div> 
+	<!-- End #header -->
+	
+	<!--Side Bar-->
+    <nav th:replace="~{fragments/asideAdmin :: asideAdmin}"> </nav>	
+	
+	
+
+	
+	<!--Conteudo página-->
+	<div class="page-wrapper chiller-theme">
+		<div class="container d-flex justify-content-center mb-5 mt-5">
+			<h1>Seção administrativa</h1>
+		</div>
+	</div>
+	
+	
+	
+	<!--****************MUDAR AS ROTAS***************-->
+	<div class="container mt-3">
+		<h2>Cadastro da feira</h2>
+		<form th:action="@{/}" th:object="${marketplace}" method="post">
+			
+			<div class="form-group">
+				<label for="nome">Nome da feira:</label>
+				<input type="text" id="nameMarket" class="form-control" th:field="*{nameMarket}" />
+			</div>												
+			
+			<div class="form-group">
+				<label for="imgUrl">Url do Mapa:</label>
+				<input type="text" id="mapUrl" class="form-control" th:field="*{mapUrl}" />
+			</div>
+			
+			<div class="form-group">
+				<label for="preco">Endereço:</label>
+				<input type="text" id="address" class="form-control" th:field="*{address}" />
+			</div>
+			
+			<div class="form-group">
+				<div class="container d-flex justify-content-center mb-5 mt-5">
+					<h1>Para cadastrar as lojas desta feira, cadastre-a primeiro. Após, na listagem de feiras clique em "ver lojas". </h1>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label> Empresas:</label>
+				<div th:each="categoria : ${categorias}">
+					<div class="form-check">
+						 <input class="form-check-input" type="checkbox" id="categoria-${categoria.id}"
+                            name="categorias" th:value="${categoria.id}"
+                            th:checked="${produto.categorias.contains(categoria)}" />
+                        <label class="form-check-label" th:for="'categoria-' + ${categoria.id}"
+                            th:text="${categoria.nome}"></label>
+					</div>					
+				</div>
+			</div>
+									
+			
+			<button type="submit" class="btn btn-primary">Salvar</button>
+		</form>
+	</div>
+
+    <!-- JS scripts -->
+    	<script th:replace="~{fragments/scripts :: jquery}">		
+		</script>
+
+		<script th:replace="~{fragments/scripts :: popper}">
+	    </script>
+	    
+    	<script th:replace="~{fragments/scripts :: bootstrap}">
+    	</script>
+		
+		<script th:replace="~{fragments/scripts :: sideBar}">			
+		</script>
+    
+    
+</body>
+
+</html>

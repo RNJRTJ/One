@@ -1,0 +1,106 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" id="svg-map" version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="100%" height="100%" viewBox="0 0 1920.000000 1080.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)"
+fill="#553436" stroke="none">
+
+<!-- Borda de cima-->
+
+<path 
+d="M198 10598 c-2 -7 -2 -1002 0 -2210 l4 -2198 79 0 79 0 0 210 0 210
+6985 0 6985 0 0 130 0 130 -215 0 -215 0 0 1795 0 1795 815 0 815 0 0 75 0 75
+-7664 0 c-6122 0 -7665 -3 -7668 -12z m13602 -1918 l0 -1810 -310 0 -310 0 0
+-80 0 -80 -1170 0 -1170 0 0 80 0 80 -570 0 -570 0 0 -80 0 -80 -1050 0 -1050
+0 0 80 0 80 -570 0 -570 0 0 -80 0 -80 -1115 0 -1115 0 0 80 0 80 -575 0 -575
+0 0 -80 0 -80 -1360 0 -1360 0 0 1890 0 1890 6720 0 6720 0 0 -1810z m-9620
+-1940 l0 -80 -525 0 -525 0 0 80 0 80 525 0 525 0 0 -80z m3370 0 l0 -80 -525
+0 -525 0 0 80 0 80 525 0 525 0 0 -80z m3250 0 l0 -80 -525 0 -525 0 0 80 0
+80 525 0 525 0 0 -80z m3480 0 l0 -80 -525 0 -525 0 0 80 0 80 525 0 525 0 0
+-80z"/>
+
+
+<!-- 1º Loja Superior -->
+<a class="enterprise" fantasyName="Loja do João" idEnterprise="1" xlink:href="/enterprise/showByMap/3">
+<path fill="#995d61"
+d="M480 8660 l0 -1710 1585 0 1585 0 0 1710 0 1710 -1585 0 -1585 0 0
+-1710z"/>    
+</a>
+
+<!-- 2º Loja Superior -->
+<a  class="enterprise" fantasyName="Loja do Rodrigo" idEnterprise="2">
+<path fill="#995d61"
+d="M3780 8660 l0 -1710 1590 0 1590 0 0 1710 0 1710 -1590 0 -1590 0 0
+-1710z"/>
+</a>
+
+<!-- 3º Loja Superior -->
+<a class="enterprise"  fantasyName="Loja do Pedro" idEnterprise="3">
+<path fill="#995d61"
+d="M7090 8660 l0 -1710 1585 0 1585 0 0 1710 0 1710 -1585 0 -1585 0 0
+-1710z"/>
+</a>
+
+<!-- 4º Loja Superior -->
+<a class="enterprise" fantasyName="Loja do Ricardo" idEnterprise="4">
+<path fill="#995d61"
+d="M10400 8660 l0 -1710 1585 0 1585 0 0 1710 0 1710 -1585 0 -1585 0 0
+-1710z"/>
+</a>
+
+
+<!-- Borda direita superior -->
+<path 
+d="M17120 10535 l0 -75 615 0 615 0 0 -2175 0 -2175 75 0 75 0 0 2250 0
+2250 -690 0 -690 0 0 -75z"/>
+
+<!-- Borda de baixo-->
+<path 
+d="M190 2547 c0 -1135 3 -2166 7 -2290 l6 -227 7664 0 7663 0 0 75 0 75
+-810 0 -810 0 0 1795 0 1795 210 0 210 0 0 130 0 130 -6990 0 -6990 0 0 290 0
+290 -80 0 -80 0 0 -2063z m3990 1353 l0 -80 -525 0 -525 0 0 80 0 80 525 0
+525 0 0 -80z m3370 0 l0 -80 -525 0 -525 0 0 80 0 80 525 0 525 0 0 -80z
+m3250 0 l0 -80 -525 0 -525 0 0 80 0 80 525 0 525 0 0 -80z m3480 0 l0 -80
+-525 0 -525 0 0 80 0 80 525 0 525 0 0 -80z m-11200 -50 l0 -80 575 0 575 0 0
+80 0 80 1115 0 1115 0 0 -80 0 -80 570 0 570 0 0 80 0 80 1050 0 1050 0 0 -80
+0 -80 570 0 570 0 0 80 0 80 1170 0 1170 0 0 -80 0 -80 320 0 320 0 0 -1810 0
+-1810 -6755 0 -6755 0 0 85 c0 67 3 87 15 91 13 5 15 215 15 1805 l0 1799
+1370 0 1370 0 0 -80z"/>
+
+<!-- 4º Loja Inferior -->
+<a class="enterprise" fantasyName="Loja da Rayza" idEnterprise="5">
+<path fill="#995d61"
+d="M10400 1980 l0 -1710 1585 0 1585 0 0 1710 0 1710 -1585 0 -1585 0 0
+-1710z"/>
+</a>
+
+<!-- 3º Loja Inferior -->
+<a class="enterprise" fantasyName="Loja do Robson" idEnterprise="6">
+<path fill="#995d61"
+d="M7090 1970 l0 -1710 1585 0 1585 0 0 1710 0 1710 -1585 0 -1585 0 0
+-1710z"/>
+</a>
+
+<!-- 1º Loja Inferior -->
+<a class="enterprise" fantasyName="Loja do Jeferson" idEnterprise="7">
+<path fill="#995d61"
+d="M480 1960 l0 -1710 1585 0 1585 0 0 1710 0 1710 -1585 0 -1585 0 0
+-1710z"/>
+</a>
+
+<!-- 2º Loja Inferior -->
+<a class="enterprise" fantasyName="=Loja do Igor" idEnterprise="8">
+<path fill="#995d61"
+d="M3787 3663 c-4 -3 -7 -773 -7 -1710 l0 -1703 1590 0 1590 0 -2 1707
+-3 1708 -1581 3 c-869 1 -1584 -1 -1587 -5z"/>
+</a>
+
+<!-- Borda direita inferior -->
+<path 
+d="M18350 2355 l0 -2175 -615 0 -615 0 0 -75 0 -75 690 0 690 0 0 2250
+0 2250 -75 0 -75 0 0 -2175z"/>
+</g>
+</svg>

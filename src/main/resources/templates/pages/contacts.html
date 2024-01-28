@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head th:replace="~{fragments/head :: head('CF | Contate-nos')}"></head>
+
+<body>
+	
+    <!-- - header - -->
+    <header th:replace="~{fragments/header :: navbar}" ></header> 
+    <div th:replace="~{fragments/header :: space}"></div> 
+	<!-- End #header -->
+
+    <!-- - main - -->
+    <main class="container">
+ 		
+		
+        <!-- #contact-section -->
+        <section id="contact-section">
+            <div class="section-title py-4">
+                <h2 class="fs-3 fw-bold">Mande-nos uma mensagem:</h2>
+                <p class="fs-5 pb-2 fw-light">Entre em contato através dos nossos
+                    <span class="fw-bold">canais de atendimento</span> e siga-nos nas
+                    <span class="fw-bold">redes sociais</span>
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-bg text-center rounded py-3 mb-3">
+                        <i class="bi bi-envelope-plus icon"></i>
+
+                        <div class="section-title py-1">
+                            <h3 class="fs-5 fw-semibold">Envie-nos um e-mail</h3>
+                            <p class="fs-6">squad25.recode2023@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-bg text-center rounded py-3 mb-3">
+                        <i class="bi bi-telephone-inbound icon"></i>
+
+                        <div class="section-title py-1">
+                            <h3 class="fs-5 fw-semibold">Faça-nos uma chamada</h3>
+                            <p class="fs-6">+55 74 9 99123-456 | +55 74 9 99654-321</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-bg text-center rounded py-3 mb-3">
+                        <i class="bi bi-star icon icon-star fs-2 px-1"></i>
+                        <i class="bi bi-star icon icon-star fs-2 px-1"></i>
+                        <i class="bi bi-star icon icon-star fs-2 px-1"></i>
+                        <i class="bi bi-star icon icon-star fs-2 px-1"></i>
+                        <i class="bi bi-star icon icon-star fs-2 px-1"></i>
+
+                        <div class="section-title py-1">
+                            <h3 class="fs-5 fw-semibold">Avalie nosso serviço</h3>
+                            <p class="fs-6">Valorizamos muito sua opinião</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <form class="p-3 rounded contact-bg">
+                        <div class="mb-3">
+                            <label for="inputName" class="form-label">Nome completo:</label>
+                            <input type="text" class="form-control" id="inputName">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Seu e-mail:</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                                placeholder="ex.: flaviojose@gmail.com">
+                            <div id="emailHelp" class="form-text">Seu e-mail não será divulgado</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inputSubject" class="form-label">Assunto:</label>
+                            <input type="text" class="form-control" id="inputSubject">
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control py-3 px-3" placeholder="Escreva sua mensagem..." cols="2"
+                                rows="5"></textarea>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="isNotifications">
+                            <label class="form-check-label fs-6 fw-light" for="isNotifications">Aceito receber
+                                notificações no meu e-mail</label>
+                        </div>
+
+                        <div class="d-flex justify-content-center my-2">
+                            <button type="submit" class="btn btn-outline-primary">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section> <!-- #contact-section -->
+
+    </main> <!-- End .container -->
+    
+    <!-- #subscribe-section -->
+    <section id="subscribe-section" class="container-fluid py-4">
+        <div class="section-title text-center pt-2">
+            <h2 class="fs-3 fw-bold">Inscreva-se e fique por dentro!</h2>
+            <p class="fs-5 pb-2 fw-light">Preencha com seu melhor e-mail e mantenha-se informado a cada atualização</p>
+        </div>
+
+        <form action="" class="px-5 pb-2">
+            <div class="row">
+                <div class="col-md-9 mt-3">
+                    <input type="email" class="form-control rounded py-3" id="inputEmail" aria-describedby="emailHelp">
+                </div>
+
+                <div class="col-md-3 text-center mt-3">
+                    <button type="submit" class="btn btn-primary py-3 px-4">Inscreva-se</button>
+                </div>
+            </div>
+        </form>
+    </section> <!-- End #subscribe-section -->
+    
+   <!-- - footer - -->
+    <footer th:replace="~{fragments/footer :: footer}"></footer> 
+    <!-- - End #footer - -->
+    
+    <!-- JS scripts -->
+    <script th:replace="~{fragments/scripts :: popper}">
+    </script>
+    <script th:replace="~{fragments/scripts :: bootstrap}">
+    </script>
+    
+</body>
+
+</html>
